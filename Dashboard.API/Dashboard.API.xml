@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dashboard.API</name>
+    </assembly>
+    <members>
+        <member name="M:Dashboard.API.Controllers.AuthController.Login(Dashboard.API.Models.AccountLoginDTO)">
+            <summary>
+            Login
+            </summary>
+            <param name="accountForLogin"></param>
+        </member>
+        <member name="M:Dashboard.API.Controllers.AuthController.RefreshToken(Dashboard.API.Models.RefreshTokenRequest)">
+            <summary>
+            Refresh Token
+            </summary>
+            <param name="refreshTokenRequest"></param>
+        </member>
+        <member name="M:Dashboard.API.Controllers.AuthController.Register(Dashboard.API.Models.AccountsRegisterDTO)">
+            <summary>
+            Register
+            </summary>
+            <param name="accountsRegister"></param>
+        </member>
+        <member name="M:Dashboard.API.Controllers.ContactsController.GetContacts(Dashboard.API.ResourceParameters.ContactsFilterDTO)">
+            <summary>
+            Get list contacts
+            </summary>
+        </member>
+        <member name="M:Dashboard.API.Controllers.ContactsController.GetContact(System.Int32)">
+            <summary>
+            Get specific contact
+            </summary>
+            <param name="id">Contact's Id</param>
+        </member>
+        <member name="M:Dashboard.API.Controllers.ContactsController.UpdateContact(System.Int32,Dashboard.API.Models.ContactsManipulateDTO)">
+            <summary>
+            Update specific contact
+            </summary>
+            <param name="id">Contact's Id</param>
+            <param name="contact"></param>
+        </member>
+        <member name="M:Dashboard.API.Controllers.ContactsController.DeleteContact(System.Int32)">
+            <summary>
+            Delete specific contact
+            </summary>
+            <param name="id">Contact's Id</param>
+        </member>
+        <member name="M:Dashboard.API.Controllers.ContactsController.AddContacts(Dashboard.API.Entities.Contacts)">
+            <summary>
+            Create new a contact
+            </summary>
+            <param name="contact"></param>
+        </member>
+        <member name="M:Dashboard.API.Controllers.ContactsController.AddCsv(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Import Contact csv file
+            </summary>
+            <param name="file"></param>
+        </member>
+        <member name="M:Dashboard.API.Controllers.ContactsController.GetCsv(Dashboard.API.ResourceParameters.ContactsFilterDTO)">
+            <summary>
+            Export Contacts csv file
+            </summary>
+            <param name="contactsFilter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dashboard.API.Controllers.DashboardsController.GetDashboards">
+            <summary>
+            Get list dashboard
+            </summary>
+        </member>
+        <member name="M:Dashboard.API.Controllers.DashboardsController.UpdateDashboard(System.Int32,Dashboard.API.Models.DashboardsManipulateDTO)">
+            <summary>
+            Update dasboard
+            </summary>
+            <param name="id">Dashboard's Id</param>
+            <param name="dashboardsManipulate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dashboard.API.Controllers.TasksController.GetTasks(Dashboard.API.ResourceParameters.TasksFilterDTO)">
+            <summary>
+            Get list tasks
+            </summary>
+            <param name="tasksFilter"></param>
+        </member>
+        <member name="M:Dashboard.API.Controllers.TasksController.AddTask(Dashboard.API.Models.TasksCreateDTO)">
+            <summary>
+            Create new a task
+            </summary>
+            <param name="task"></param>
+        </member>
+        <member name="M:Dashboard.API.Controllers.TasksController.GetTask(System.Int32)">
+            <summary>
+            Get specific task
+            </summary>
+            <param name="id">Task's Id</param>
+        </member>
+        <member name="M:Dashboard.API.Controllers.TasksController.DeleteTask(System.Int32)">
+            <summary>
+            Delete specific task
+            </summary>
+            <param name="id">Task's Id</param>
+        </member>
+        <member name="M:Dashboard.API.Controllers.TasksController.UpdateTask(System.Int32,Dashboard.API.Models.TasksManipulateDTO)">
+            <summary>
+            Update specific task
+            </summary>
+            <param name="id">Task's Id</param>
+            <param name="task"></param>
+        </member>
+        <member name="P:Dashboard.API.Models.TasksManipulateDTO.TaskTitle">
+            <summary>
+            Task title
+            </summary>
+        </member>
+        <member name="P:Dashboard.API.Models.TasksManipulateDTO.IsCompleted">
+            <summary>
+            Determine whether the task is complete or not
+            </summary>
+        </member>
+        <member name="P:Dashboard.API.ResourceParameters.ContactsFilterDTO.PageNumber">
+            <summary>
+            Page number want to get
+            </summary>
+        </member>
+        <member name="P:Dashboard.API.ResourceParameters.ContactsFilterDTO.PageSize">
+            <summary>
+            Size of page
+            </summary>
+        </member>
+        <member name="P:Dashboard.API.ResourceParameters.TasksFilterDTO.PageNumber">
+            <summary>
+            Page number want to get
+            </summary>
+        </member>
+        <member name="P:Dashboard.API.ResourceParameters.TasksFilterDTO.PageSize">
+            <summary>
+            Size of page
+            </summary>
+        </member>
+        <member name="P:Dashboard.API.ResourceParameters.TasksFilterDTO.TaskTitle">
+            <summary>
+            Task title
+            </summary>
+        </member>
+        <member name="P:Dashboard.API.ResourceParameters.TasksFilterDTO.IsCompleted">
+            <summary>
+            Determine whether the task is complete or not
+            </summary>
+        </member>
+        <member name="P:Dashboard.API.ResourceParameters.TasksFilterDTO.WidgetsId">
+            <summary>
+            Widget's Id
+            </summary>
+        </member>
+    </members>
+</doc>
